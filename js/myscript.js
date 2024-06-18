@@ -43,10 +43,19 @@ for(let i = 0; i < ourTeam.length; i++) {
     for(let key in numeroIesimo) {
         console.log(key + " : " + numeroIesimo[key]);
 
-        // Stampare le stesse informazioni su DOM sottoforma di stringhe
-        container.innerHTML += `<div>${numeroIesimo[key]}</div>`;
-
+    // Stampare le stesse informazioni su DOM sottoforma di stringhe
+    // container.innerHTML += `
+    // <div>${numeroIesimo[key]}</div>
+    // `;
     }
+
+    // Trasformare la stringa foto in una immagine effettiva
+    container.innerHTML += `
+    <div>${numeroIesimo["nomeCognome"]}</div>
+    <div>${numeroIesimo["role"]}</div>
+    <img src="${numeroIesimo["picture"]}">
+    `;
 }
+
 
 

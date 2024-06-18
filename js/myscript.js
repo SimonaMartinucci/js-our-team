@@ -51,9 +51,13 @@ for(let i = 0; i < ourTeam.length; i++) {
 
     // Trasformare la stringa foto in una immagine effettiva
     container.innerHTML += `
-    <div>${numeroIesimo["nomeCognome"]}</div>
-    <div>${numeroIesimo["role"]}</div>
-    <img src="${numeroIesimo["picture"]}">
+    <div class="card">
+        <div class="img_team">
+            <img src="${numeroIesimo["picture"]}">
+        </div>
+        <div class="name">${numeroIesimo["nomeCognome"]}</div>
+        <div class="role">${numeroIesimo["role"]}</div>
+    </div>
     `;
 }
 

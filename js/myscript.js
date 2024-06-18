@@ -1,3 +1,6 @@
+// richiamo container
+let container = document.querySelector(".container");
+
 // Creare l’array di oggetti con le informazioni fornite (nome, ruolo e foto)
 const ourTeam = [
     {
@@ -39,8 +42,11 @@ for(let i = 0; i < ourTeam.length; i++) {
 
     for(let key in numeroIesimo) {
         console.log(key + " : " + numeroIesimo[key]);
+
+        // Stampare le stesse informazioni su DOM sottoforma di stringhe
+        container.innerHTML += `<div>${numeroIesimo[key]}</div>`;
+
     }
 }
 
 
-// Stampare le stesse informazioni su DOM sottoforma di stringhe
